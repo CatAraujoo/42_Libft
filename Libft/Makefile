@@ -17,6 +17,8 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 SRCS_DIR = .
+GNL_DIR = .
+PRINTF_DIR = .
 INCLUDES_DIR = .
 
 SRCS = $(SRCS_DIR)/ft_isalpha.c \
@@ -53,21 +55,39 @@ SRCS = $(SRCS_DIR)/ft_isalpha.c \
        $(SRCS_DIR)/ft_strmapi.c \
        $(SRCS_DIR)/ft_itoa.c \
        $(SRCS_DIR)/ft_split.c
+GNL_SRCS = $(GNL_DIR)/get_next_line.c \
+		$(GNL_DIR)/get_next_line_utils.c \
+PRINTF_SRCS = $(PRINTF_DIR)/ft_printchar.c \
+		$(PRINTF_DIR)/ft_printf.c \
+		$(PRINTF_DIR)/ft_printhexa.c \
+		$(PRINTF_DIR)/ft_printnbr.c \
+		$(PRINTF_DIR)/ft_printptr.c \
+		$(PRINTF_DIR)/ft_printstr.c \
+		$(PRINTF_DIR)/ft_printunsignd.c
+
+BONUS_SRC = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelonde.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 OBJS = $(SRCS:.c=.o)
+BONUS_OBJS = $(BONUS_SRC:.c=.o)
+GNL_OBJS = $(GNL_SRCS:.c=.o)
+PRINTF_OBJS = $(PRINTF_SRCS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
+	
+BONUS: $(NAME) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -I $(INCLUDES_DIR) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean all
+re: fclean
+	make && make bonus

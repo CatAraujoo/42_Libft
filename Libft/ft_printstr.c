@@ -1,39 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_printstr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmatos-a <cmatos-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/02 11:27:02 by catarina          #+#    #+#             */
-/*   Updated: 2025/02/03 10:59:40 by cmatos-a         ###   ########.fr       */
+/*   Created: 2024/11/11 12:01:55 by cmatos-a          #+#    #+#             */
+/*   Updated: 2024/11/14 15:45:13 by cmatos-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
+#include <stddef.h>
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+int	ft_printstr(char *str)
 {
-	t_list	*new_l;
-	t_list	*new;
-	void	*set;
+	int	i;
 
-	if (!lst || !del || !f)
-		return (NULL);
-	new_l = NULL;
-	new = NULL;
-	while (lst)
+	i = 0;
+	if (str == NULL)
 	{
-		set = f(lst->content);
-		new = ft_lstnew(set);
-		if (!new)
-		{
-			del(set);
-			ft_lstclear(&new_l, new);
-			return (new_l);
-		}
-		ft_lstadd_back(&new_l, new);
-		lst = lst->next;
+		return (ft_printstr("(null)"));
 	}
-	return (new_l);
+	while (str[i] != '\0')
+	{
+		i = i + ft_printchar(str[i]);
+	}
+	return (i);
 }
+/*
+#include <stdio.h>
+int	main(void)
+{
+	char *n = NULL;
+
+	ft_printstr(n);
+	printf("\n%s\n", n);
+}*/

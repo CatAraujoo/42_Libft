@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_printchar.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmatos-a <cmatos-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/30 17:23:29 by catarina          #+#    #+#             */
-/*   Updated: 2025/02/03 10:55:19 by cmatos-a         ###   ########.fr       */
+/*   Created: 2024/11/11 12:00:04 by cmatos-a          #+#    #+#             */
+/*   Updated: 2024/11/13 10:17:29 by cmatos-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
+#include <unistd.h>
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+int	ft_printchar(int c)
 {
-	if (new)
-	{
-		new->next = *lst;
-		*lst = new;
-	}
+	write (1, &c, 1);
+	return (1);
 }

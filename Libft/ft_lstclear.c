@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: catarina <catarina@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cmatos-a <cmatos-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 19:02:51 by catarina          #+#    #+#             */
-/*   Updated: 2025/01/02 10:44:46 by catarina         ###   ########.fr       */
+/*   Updated: 2025/02/03 10:55:59 by cmatos-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,20 @@
 #include "ft_strdup.c"
 #include "ft_strlen.c"*/
 
-void    ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-    t_list  *tmp;
-    
-    if (!lst || !*lst)
-        return ;
-    while (*lst)
-    {
-        tmp = (*lst)->next;
-        del((*lst)->content);
-        free (*lst);
-        *lst = tmp;
-    }
-    *lst = NULL;
+	t_list	*tmp;
+
+	if (!lst || !*lst)
+		return ;
+	while (*lst)
+	{
+		tmp = (*lst)->next;
+		del((*lst)->content);
+		free (*lst);
+		*lst = tmp;
+	}
+	*lst = NULL;
 }
 /*
 static void	del(void *lst)
