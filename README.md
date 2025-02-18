@@ -27,9 +27,9 @@ We have to build a library that we will be able to use in our future projects.
 | 19  | [ft_isprint](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_isprint.c) | Test a character to see if it's any printable character, including a space.   |
 | 20  | [ft_toupper](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_toupper.c) | Convert a character to uppercase.                                             |
 | 21  | [ft_tolower](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_tolower.c) | Convert a character to lowercase.                                             |
-| 22  | [ft_calloc](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_calloc.c)   | Allocate space for an array and initializes it to 0.*                         |
-| 23  | [ft_strdup](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_strdup.c)   | Create a duplicate of a string, using malloc.                                 |
-* This function and malloc return a void pointer, that had no associated data type with it. A void pointer can hold address of any type and can be typecasted to any type.
+| 22  | [ft_calloc](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_calloc.c)   | Allocate space for an array and initializes it to 0.This function and malloc return a void pointer, that had no associated data type with it. A void pointer can hold address of any type and can be typecasted to any type.                         |
+| 23  | [ft_strdup](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_strdup.c)   | Create a duplicate of a string, using malloc.                                |
+
 
 
 | No  | Additional Functions                                                              | Description                                                                   |
