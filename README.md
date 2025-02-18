@@ -4,7 +4,7 @@ Since in most 42 projects we can't use any of the standard C library functions, 
 
 We have to build a library that we will be able to use in our future projects.
 
-# Libc Functions
+## Libc Functions
 
 | No  | Name                                                                              | Description                                                                   |
 | :-: | :-------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
@@ -34,7 +34,7 @@ We have to build a library that we will be able to use in our future projects.
 
   The functions calloc and malloc return a void pointer, that had no associated data type with it. A void pointer can hold address of any type and can be typecasted to any type.  
 
-# Additional Functions
+## Additional Functions
 
 | No  | Name                                                                              | Description                                                                   |
 | :-: | :------------------------------------------------------------------------------   | :---------------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ We have to build a library that we will be able to use in our future projects.
 | 10| [ft_putendl_fd](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_putendl_fd.c) | Output string to given file with newline.                                 |
 | 11| [ft_putnbr_fd](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_putnbr_fd.c)   | Output integer to given file.                                             |
 
-# Bonus Functions
+## Bonus Functions
 
 | No  | Name                                                                                        | Description                                                        |
 | :-: | :------------------------------------------------------------------------------------------ | :----------------------------------------------------------------- |
