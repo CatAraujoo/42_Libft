@@ -1,5 +1,8 @@
 # Libft
 The purpose of this project is to re-code some libc functions, as well as other common utility functions to be reused in the subsequent 42 projects.
+Since in most 42 projects we can't use any of the standard C library functions, the goal of this first project is to replicate some of the usual functions ourselves, as well as some additional functions.
+
+We have to build a library that we will be able to use in our future projects.
 
 | No  | Libc Functions   | No  | Additional Functions    | No  | Bonus Functions  |
 | :-: | :--------------- | :-: | :---------------------- | :-: | :--------------- |
