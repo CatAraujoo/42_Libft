@@ -4,7 +4,9 @@ Since in most 42 projects we can't use any of the standard C library functions, 
 
 We have to build a library that we will be able to use in our future projects.
 
-| No  | Libc Functions                                                                    | Description                                                                   |
+# Libc Functions
+
+| No  | Name                                                                              | Description                                                                   |
 | :-: | :-------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
 | 1   | [ft_memset](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_memset.c)   | Set memory to a given value.                                                  |
 | 2   | [ft_bzero](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_bzero.c)     | Set the first part of an object to null bytes (filling it with zeroes).       |
@@ -27,12 +29,14 @@ We have to build a library that we will be able to use in our future projects.
 | 19  | [ft_isprint](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_isprint.c) | Test a character to see if it's any printable character, including a space.   |
 | 20  | [ft_toupper](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_toupper.c) | Convert a character to uppercase.                                             |
 | 21  | [ft_tolower](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_tolower.c) | Convert a character to lowercase.                                             |
-| 22  | [ft_calloc](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_calloc.c)   | Allocate space for an array and initializes it to 0.This function and malloc return a void pointer, that had no associated data type with it. A void pointer can hold address of any type and can be typecasted to any type.                         |
-| 23  | [ft_strdup](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_strdup.c)   | Create a duplicate of a string, using malloc.                                |
+| 22  | [ft_calloc](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_calloc.c)   | Allocate space for an array and initializes it to 0.                          |
+| 23  | [ft_strdup](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_strdup.c)   | Create a duplicate of a string, using malloc.                                 |
 
+  The functions calloc and malloc return a void pointer, that had no associated data type with it. A void pointer can hold address of any type and can be typecasted to any type.  
 
+# Additional Functions
 
-| No  | Additional Functions                                                              | Description                                                                   |
+| No  | Name                                                                              | Description                                                                   |
 | :-: | :------------------------------------------------------------------------------   | :---------------------------------------------------------------------------- |
 | 1 | [ft_substr](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_substr.c)     | Get a substring from string.                                                  |
 | 2 | [ft_strjoin](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_strjoin.c)   | Concatenate two strings into a new string, using calloc.                      |
@@ -46,7 +50,9 @@ We have to build a library that we will be able to use in our future projects.
 | 10| [ft_putendl_fd](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_putendl_fd.c) | Output string to given file with newline.                                 |
 | 11| [ft_putnbr_fd](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_putnbr_fd.c)   | Output integer to given file.                                             |
 
-| No  | Bonus Functions                                                                             | Description                                                        |
+# Bonus Functions
+
+| No  | Name                                                                                        | Description                                                        |
 | :-: | :------------------------------------------------------------------------------------------ | :----------------------------------------------------------------- |
 | 1   | [ft_lstnew](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_lstnew.c)             | Create new list.                                                   |
 | 2   | [ft_lstadd_front](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_lstadd_front.c) | Add new element at beginning of list.                              |
