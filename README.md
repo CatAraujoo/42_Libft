@@ -1,7 +1,7 @@
 # Libft
 The purpose of this project is to re-code some libc functions, as well as other common utility functions to be reused in the subsequent 42 projects.
 
-| No  | Libc Functions                                                                 |   | No  | Additional Functions                                                                 |   | No  | Bonus Functions                                                                          |
+| No  | Libc Functions                                                                 | No  | Additional Functions                                                                 | No  | Bonus Functions                                                                          |
 | :-: | :----------------------------------------------------------------------------- | - | :-: | :----------------------------------------------------------------------------------- | - | :-: | :--------------------------------------------------------------------------------------- |
 | 1   | [ft_memset](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_memset.c) | 1 | [ft_substr](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_substr.c) | 1   | [ft_lstnew](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_lstnew.c) |
 | 2   | [ft_bzero](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_bzero.c)     | 2   | [ft_strjoin](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_strjoin.c)       | 2   | [ft_lstadd_front](https://github.com/CatAraujoo/42_Libft/blob/main/Libft/ft_lstadd_front.c) |
